@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body{
+  font-family:  Tahoma, Arial;
+  height: 100%;
+  background-image: url("Imgs/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container{
+  margin: auto;
+  width: 900px;
+  padding: 30px;
+}
+
+@media (max-width:910px){
+  .container{
+    width: 700px;
+  }
+}
+
+@media (max-width:710px){
+  .container{
+    width: 500px;
+  }
+}
+
+.container .get-repos{
+  display: flex;
+  padding: 20px;
+  background-color: #c86a28;
+}
+
+.container .get-repos input{
+  width: 100%;
+  height: 54px;
+  border: none;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.container .get-repos input:focus{
+  outline:2px solid#ca303a ;
+}
+
+.container .get-repos .button{
+  width: 140px;
+  margin-left: 10px;
+  height: 54px;
+  background-color: #ca2216;
+  line-height: 54px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.container .show-data{
+  background-color: #dfdfdf;
+  padding: 20px;
+}
+
+.container .show-data .repo-box{
+  background-color: grey;
+  color: white;
+  padding: 20px;
+}
+
+.container .show-data .repo-box:not(:last-child){
+  margin-bottom: 9px;
+}
+
+.container .show-data .repo-box a,
+.container .show-data .repo-box span{
+  float: right;
+  width: 90px;
+  padding: 4px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.container .show-data .repo-box a{
+  background-color: #385a57;
+  text-decoration: none;
+}
+
+.container .show-data .repo-box span{
+  background-color: #759aa8;
+}
